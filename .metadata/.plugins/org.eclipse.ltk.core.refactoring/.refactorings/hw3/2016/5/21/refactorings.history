@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;hw3.CommissionEmployee&apos; to &apos;CommissionEmployee1&apos;&#x0A;- Original project: &apos;hw3&apos;&#x0A;- Original element: &apos;hw3.CommissionEmployee&apos;&#x0A;- Renamed element: &apos;hw3.CommissionEmployee1&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;CommissionEmployee&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;hw3{Q1.java[CommissionEmployee" matchStrategy="1" name="CommissionEmployee1" qualified="false" references="true" similarDeclarations="false" stamp="1463367261106" textual="false" version="1.0"/>
+</session>

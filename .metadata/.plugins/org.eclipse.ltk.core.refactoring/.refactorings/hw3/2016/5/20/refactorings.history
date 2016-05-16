@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Encapsulate field &apos;hw3.Direction.degree&apos; in &apos;hw3.Direction&apos;&#x0A;- Original project: &apos;hw3&apos;&#x0A;- Original element: &apos;hw3.Direction.degree&apos;&#x0A;- Getter method name: &apos;getDegree&apos;&#x0A;- Setter method name: &apos;setDegree&apos;&#x0A;- Field visibility: &apos;public&apos;&#x0A;- Use getter and setter methods in declaring type" comments="false" declaring="true" description="Encapsulate field &apos;degree&apos;" flags="589830" getter="getDegree" id="org.eclipse.jdt.ui.self.encapsulate" input="/src&lt;hw3{Q2.java[Direction^degree" insertion="0" setter="setDegree" stamp="1463233975463" version="1.0" visibility="1"/>
+</session>

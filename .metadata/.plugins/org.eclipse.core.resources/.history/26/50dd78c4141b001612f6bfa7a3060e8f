@@ -1,0 +1,24 @@
+package hw3;
+
+public class Q2 {
+
+	public static void main(String[] args) {
+		System.out.println(Direction.West);
+
+	}
+
+}
+
+enum Direction {
+	North(0), Northeast(45), East(90), Southeast(135), South(180), Southwest(225), West(270), Northwest(315);
+
+	private final int degree;
+
+	Direction(int degree) {
+		this.degree = degree;
+	}
+
+	public int getDegree() {
+		return degree;
+	}
+}
