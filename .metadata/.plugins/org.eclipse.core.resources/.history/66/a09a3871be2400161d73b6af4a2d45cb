@@ -1,0 +1,31 @@
+import java.util.Random;
+import java.util.Scanner;
+
+public class letsplay {
+
+	public static void main(String[] args) {
+		int start = 0;
+		int end = 100;
+		Random random = new Random();
+		int ans = random.nextInt(start)+1;
+		Scanner scanner = new Scanner(System.in);
+		int num = scanner.nextInt();
+
+		while (num != ans) {
+			if (num > ans) {
+				System.out.printf("%d ~ %d%n",start,num);
+				end = num;
+			}
+			else {
+				System.out.printf("%d ~ %d%n",num,end);
+				start = num;
+			}
+			num = scanner.nextInt();
+			
+		}
+		System.out.println("bigo");
+		scanner.close();
+
+	}
+
+}

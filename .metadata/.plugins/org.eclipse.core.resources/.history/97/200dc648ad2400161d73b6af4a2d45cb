@@ -1,0 +1,104 @@
+package hw4;
+
+public class Q1 {
+
+	public static void main(String[] args) {
+
+	}
+
+}
+
+abstract class Shape {
+	public abstract double getArea();
+
+	@Override
+	public String toString() {
+		return String.format("This is a shape");
+	}
+}
+
+abstract class TwoDimensionalShape extends Shape {
+	@Override
+	public String toString() {
+		return String.format("%s of 2D %s, whose area=%.2f", super.toString(), getClass().getName(), getArea());
+	}
+}
+
+abstract class ThreeDimensionalShape extends Shape {
+	public abstract double getVolume();
+
+	@Override
+	public String toString() {
+		return String.format("%s of 3D %s, whose area=%.2f and volume=%.2f", super.toString(), getClass().getName(),
+				getArea(), getVolume());
+	}
+}
+
+class Circle extends TwoDimensionalShape {
+	private double radius;
+
+	public Circle(double radius) {
+		if (radius < 0.0) {
+			throw new IllegalArgumentException("radius must be >= 0.0");
+		}
+		this.radius = radius;
+	}
+
+	public double getRadius() {
+		return radius;
+	}
+
+	public void setRadius(double radius) {
+		if (radius < 0.0) {
+			throw new IllegalArgumentException("radius must be >= 0.0");
+		}
+		this.radius = radius;
+	}
+
+	@Override
+	public double getArea() {
+		return (Math.PI) * Math.pow(getRadius(), 2);
+	}
+}
+
+class Square extends TwoDimensionalShape {
+	private double length;
+
+	public Square(double length) {
+		if (length < 0.0) {
+			throw new IllegalArgumentException("length must be >= 0.0");
+		}
+		this.length = length;
+	}
+
+	public double getLength() {
+		return length;
+	}
+
+	public void setLength(double length) {
+		if (length < 0.0) {
+			throw new IllegalArgumentException("length must be >= 0.0");
+		}
+		this.length = length;
+	}
+
+	@Override
+	public double getArea() {
+		return Math.pow(getLength(), 2);
+	}
+}
+
+class Sphere extends ThreeDimensionalShape {
+	private double radius;
+
+	public Sphere(double radius) {
+		if (radius < 0.0) {
+			throw new IllegalArgumentException("radius must be >= 0.0");
+		}
+		this.radius = radius;
+	}
+}
+
+class Cube extends ThreeDimensionalShape {
+
+}

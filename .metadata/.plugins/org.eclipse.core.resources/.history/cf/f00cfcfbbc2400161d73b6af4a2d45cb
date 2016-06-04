@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class letsplay {
+
+	public static void main(String[] args) {
+		
+		int num;
+		Scanner scanner = new Scanner(System.in);
+		num = scanner.nextInt();
+		
+		while () {
+			
+		}
+
+	}
+
+}

@@ -1,0 +1,46 @@
+package hw4;
+
+public class Q1 {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}
+
+abstract class Shape{
+	public abstract double getArea();
+	
+	@Override
+	public String toString() {
+		return String.format("This is a shape");
+	}
+}
+
+abstract class TwoDimensionalShape extends Shape{
+	@Override
+	public String toString() {
+		return super.toString();
+	}
+}
+
+abstract class ThreeDimensionalShape extends Shape{
+	
+}
+
+class Circle extends TwoDimensionalShape{
+	
+}
+
+class Square extends TwoDimensionalShape{
+	
+}
+
+class Sphere extends ThreeDimensionalShape{
+	
+}
+
+class Cube extends ThreeDimensionalShape{
+	
+}

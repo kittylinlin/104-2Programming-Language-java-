@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class letsplay {
+
+	public static void main(String[] args) {
+		int start = 0;
+		int end = 100;
+		int ans = 56;
+		Scanner scanner = new Scanner(System.in);
+		int num = scanner.nextInt();
+
+		while (num != ans) {
+			if (num > ans) {
+				System.out.printf("%d ~ %d",start,num);
+			}
+			else {
+				System.out.printf("%d ~ %d",num,end);
+			}
+			num = scanner.nextInt();
+		}
+		System.out.println("bigo");
+		scanner.close();
+
+	}
+
+}

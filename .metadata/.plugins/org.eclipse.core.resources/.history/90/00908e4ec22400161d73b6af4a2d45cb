@@ -1,0 +1,36 @@
+import java.util.Random;
+import java.util.Scanner;
+
+public class letsplay {
+
+	public static void main(String[] args) {
+		
+		int start = 0;
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("Please set an integer upperbound:");
+		int end = scanner.nextInt();
+		Random random = new Random();
+		int ans = random.nextInt(end)+1;
+		int num = scanner.nextInt();
+
+		System.out.println("We will start from 0 to");
+		while (num != ans) {
+			if (num > ans) {
+				System.out.printf("%d ~ %d%n",start,num);
+				end = num;
+			}
+			else {
+				System.out.printf("%d ~ %d%n",num,end);
+				start = num;
+			}
+			num = scanner.nextInt();
+			
+		}
+		System.out.println("bigo");
+		scanner.close();
+
+	}
+
+}

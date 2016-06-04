@@ -1,0 +1,30 @@
+package hw4;
+
+public class Q3 {
+	
+	public static void main(String[] args) {
+		someMethod();
+	}
+	
+	public static void someMethod() throws Exception {
+		throw new ExceptionA();
+	}
+
+	public void handle() {
+		try {
+			someMethod();
+		} catch (Exception e) {
+			System.out.println(e);
+		}
+
+	}
+	
+}
+
+class ExceptionA extends Exception {
+
+}
+
+class ExceptionB extends ExceptionA {
+
+}
